@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>*** PUT YOUR NAME AND ASSIGNMENT NUMBER HERE ***</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// Student's Name: Artur Sachakov.
+		// Date: 03/15/2016.
+		// Assignment number: Midterm Assignment.
+	
+		/********* GLOBAL VARIABLES *********/
+		// Enter any global variable in this region
+		var BR = "<br />";
+		var ES = " ";
+		/********* FUNCTIONS *********/
+		// Enter any functions in this region
+		   
+		/********* MAIN *********/
+		function main()
+		{
+			 
+			 var random;	//variable random	
+			 var guess ="";	//variable guess is String variable
+			 
+			 random = Math.floor(Math.random() * 10) + 1;	//random and Math.floor methods
+			 
+			 
+			 while (guess != random){	//while loop
+			 guess = eval(prompt ("Please guess the number from 1 to 10",""));	//user input screen.  eval will convert String variable
+			 																	//to a Number.  Number will be assigned to a guess variable.
+			 
+			 guess == random ? match = 'Good work!  Random number and your number are the same.  This is a match.' : match = 'Try again.  Random number and your number do not match';
+			 //Conditional (Ternary) operator			
+			
+			 alert(match);	//will display the result of a user guessing the numbers.  Matched or Try again.
+			
+			 }
+			 }
+
+		
+
+
+
+
+			
+					
+		// This line calls main, don't change it:
+		main();
+	</script>
+</body>
+</html>
